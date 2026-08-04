@@ -1,0 +1,26 @@
+{
+  "id": "messaging-workshop-b2b",
+  "name": "messaging-workshop-b2b",
+  "version": "0.1.0",
+  "description": "A self-guided B2B messaging workshop that produces your Product Marketing Source of Truth.",
+  "author": {
+    "name": "Eldur Studio LLC"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "B2B Messaging Workshop",
+    "shortDescription": "Build a proof-backed B2B messaging source of truth",
+    "longDescription": "Work through the Eldur Studio B2B messaging framework one section at a time, with original guidance, focused questions, a fictional example, evidence checks, and a final pressure-tested source of truth.",
+    "developerName": "Eldur Studio LLC",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Start my B2B messaging workshop.",
+      "Resume my messaging workshop from a checkpoint.",
+      "Pressure-test my B2B messaging framework."
+    ]
+  }
+}
