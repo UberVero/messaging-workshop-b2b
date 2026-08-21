@@ -2,7 +2,7 @@
 
 A self-guided B2B messaging workshop that produces your Product Marketing Source of Truth.
 
-The plugin guides a founder or product marketer through the Eldur Studio framework one section at a time:
+The plugin guides a founder or product marketer through the Eldur Studio framework one section at a time. The canonical framework numbers these phases 0–3; the UI also labels their ordinal position so the fourth and final phase is unmistakable:
 
 1. Company snapshot
 2. Product marketing strategy
@@ -10,6 +10,8 @@ The plugin guides a founder or product marketer through the Eldur Studio framewo
 4. Pressure test
 
 At every step it shows only the relevant guidance or prompt from the Notion template, asks focused questions, and checks the answer for specificity and evidence. Saying `example` reveals one clearly fictional ExampleCo Legal answer without advancing the workshop or changing the user's work.
+
+When the user asks for `help`, the workshop explains the decision, offers grounded answer shapes, and recommends a useful direction without inventing company facts. It also collects quote provenance and anonymization preferences together, supports a single consolidated persona for simple self-serve purchases, and turns missing proof into a concrete validation plan.
 
 ## What v1 includes
 

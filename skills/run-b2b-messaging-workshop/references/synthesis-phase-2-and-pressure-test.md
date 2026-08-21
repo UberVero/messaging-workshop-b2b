@@ -728,6 +728,15 @@ A hypothesis label is honest, but it is not proof. If a value claim lacks a real
 4. Regenerate summaries, headlines, differentiators, and the final statement wherever the claim appears.
 5. Rerun Proof.
 
+If the user confirms that no customer, pilot, benchmark, or internal outcome record exists, keep the result `UNRESOLVED EVIDENCE GAP` and produce a **Proof validation plan**. For each unproven claim already in the ledger, specify:
+
+- the baseline to capture before onboarding or intervention;
+- the follow-up metric and observation window;
+- the inspectable source or record owner;
+- what evidence would support or reject the claim.
+
+Do not invent a target percentage, savings amount, or success threshold. Separate product-mechanics facts from outcome measurements. Continue the remaining pressure-test checks after the plan is recorded.
+
 ### Example verdict
 
 > Fictional example — illustrative only, not your answer
@@ -827,6 +836,16 @@ or:
 - **Result:** Revisit:
   - <section> — <reason>
   - <section> — <reason>
+
+When Proof is unresolved for lack of evidence, also include:
+
+```markdown
+## Proof validation plan
+
+| Unproven claim | Baseline | Follow-up | Inspectable source / owner | Evidence that would support or reject it |
+|---|---|---|---|---|
+| <claim already in the ledger> | <before measurement> | <after measurement + window> | <record or owner> | <comparison needed; no invented target> |
+```
 
 ### Evaluation rules
 

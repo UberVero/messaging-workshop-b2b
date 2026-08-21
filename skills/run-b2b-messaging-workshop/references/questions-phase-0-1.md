@@ -813,7 +813,8 @@ Display this exact check after the fields:
 
 **Quality bar**
 
-- Three to six relevant roles.
+- One to six relevant roles. Prefer three to six when buyer, user, champion, approver, payer, or blocker are genuinely different people.
+- One consolidated persona is valid when the user confirms that the same person uses, buys, approves, and pays, especially for low-cost self-serve offers. Record that consolidation and do not invent extra decision-makers to fill the table.
 - Priorities are explicit, with one primary focus audience.
 - Awareness level and messaging implication agree.
 - Each row includes a distinct JTBD, outcome, and objection.
@@ -824,7 +825,7 @@ Display this exact check after the fields:
 
 **Help-mode diagnostic**
 
-> Name the people who use it, champion it, sign off, pay, and review security or implementation. One person may hold several roles.
+> Name the people who use it, champion it, sign off, pay, and review security or implementation. One person may hold several roles. If one person handles the whole decision, say so and use one consolidated persona.
 
 **Output shape**
 

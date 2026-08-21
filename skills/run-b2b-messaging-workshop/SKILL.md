@@ -23,8 +23,9 @@ On a new workshop:
 
 1. Explain that the workshop has four phases and ends in a pressure-tested messaging source of truth.
 2. Explain once that the workshop accepts natural answers and short text commands; do not present text commands as buttons.
-3. Begin `Phase 0 of 4 · Step 1 of 5` immediately. Show the shared Phase 0 guidance once at the start of Phase 0, then ask for the company or product name together with the Step 1 questions about what it sells. Do not make the name a separate unguided turn.
-4. Maintain the workshop ledger defined in `evidence-and-state.md` silently unless the user asks to inspect it.
+3. Explain that the canonical framework numbers its four phases `0` through `3`, then use the user-facing progress labels below so nobody expects a separate Phase 4.
+4. Begin `Phase 0 · Company snapshot (1st of 4 phases) · Step 1 of 5` immediately. Show the shared Phase 0 guidance once at the start of Phase 0, then ask for the company or product name together with the Step 1 questions about what it sells. Do not make the name a separate unguided turn.
+5. Maintain the workshop ledger defined in `evidence-and-state.md` silently unless the user asks to inspect it.
 
 On resume:
 
@@ -35,11 +36,22 @@ On resume:
 
 If the user supplies an existing framework for a pressure test, preserve its wording, build a temporary ledger from it, and start Phase 3.
 
+## Use unambiguous progress labels
+
+Use these exact user-facing phase labels wherever progress appears, including examples, resumes, recaps, and pressure-test reruns:
+
+- `Phase 0 · Company snapshot (1st of 4 phases)`
+- `Phase 1 · Product marketing strategy (2nd of 4 phases)`
+- `Phase 2 · Positioning (3rd of 4 phases)`
+- `Phase 3 · Pressure test (4th and final phase)`
+
+Append the current step or check count after the label. Never write `Phase 3 of 4`; it implies that another numbered phase follows.
+
 ## Run every content step the same way
 
 Use this order and keep the blocks visually distinct:
 
-1. `Phase X of 4 · Step Y of Z` and the exact section title.
+1. The exact user-facing phase label above, `Step Y of Z` (or `Check Y of Z`), and the exact section title.
 2. `What to write here` with only the current section's original Notion guidance. Never repeat phase-level guidance on every step.
 3. `Prompt to help you answer` with the current section's original Notion prompt when one exists. If there is no formal prompt, show only the current field placeholder from the canonical template, such as `one plain line` or `price range + time to close`. Do not substitute the question-bank diagnostic unless the user asks for help.
 4. `Your question` with one to three focused questions from the question bank.
@@ -60,7 +72,7 @@ Use these counts for progress:
 
 - **Natural answer:** Evaluate it, then either ask one focused follow-up or draft the exact template field.
 - **See an example / example:** Repeat the unchanged progress indicator and current section title, then read only the current example. Start with `Fictional example — illustrative only, not your answer`. Show no other example sections. Do not update the ledger or advance. Return to the exact same question and the plain-text reply instruction.
-- **Help me think:** Ask one easier diagnostic from the question bank. Do not supply facts. Offer possible answer shapes only as hypotheses.
+- **Help me think:** Be more proactive than merely repeating the question. Briefly explain the decision the field is meant to capture, suggest two to four concrete answer directions grounded in the approved ledger and current prompt, and recommend one direction when the existing evidence makes a recommendation useful. Label suggestions as possible shapes or hypotheses, never as facts. Then ask one easier diagnostic from the question bank. A partially filled scaffold with blanks is allowed when it helps the user respond.
 - **Show guidance:** Repeat the current original guidance and prompt without advancing.
 - **Skip:** Mark required content as an open gap. Remove an optional section only when the user explicitly skips it.
 - **Back:** Reopen the previous field and keep its approved answer until a replacement is approved.
@@ -92,6 +104,15 @@ followed by only the proposed field content, then one plain sentence:
 
 Do not replace an approved answer until the revision is approved. After each phase, show a short recap of approved content, hypotheses, and open gaps, then say: `Reply “continue,” “review,” or “pause.”`
 
+## Capture quote provenance and privacy immediately
+
+When the user supplies customer language or a purported quote, ask one combined provenance-and-privacy question before drafting it:
+
+- What inspectable record did it come from (customer request, email, call, interview, review, ticket, or named internal record)?
+- Should the customer be named, anonymized, or redacted?
+
+Do not require disclosure of a private customer identity. An anonymized but specific record label such as `Anonymized customer website-support request, August 2026` is sufficient. Preserve redactions visibly and never call an edited paraphrase verbatim.
+
 ## Synthesize positioning
 
 In Phase 2, derive drafts from approved Phase 0 and Phase 1 content. Do not make the user repeat information. Show the original guidance before each synthesized draft and ask only about conflicts or genuine gaps.
@@ -103,6 +124,8 @@ Do not introduce a new audience, category, comparator, capability, outcome, or p
 Show each original Phase 3 question and its `It fails when…` definition. Mark each check `Pass`, `Fail`, or `Unresolved evidence gap` and explain the reason briefly.
 
 For a failure, route back to the source section identified in the Phase 2/3 reference, show that section's guidance again, repair it with the user, and rerun the failed check. Finish with either `Pass` or a precise list of unresolved sections; never return a vague score.
+
+When Proof remains an unresolved evidence gap because no customer or pilot evidence exists, generate a compact validation plan instead of stopping at the warning. Derive measurements only from the unproven claims already in the ledger; do not invent target improvements. Include a baseline, follow-up observation window, record owner or source, and the evidence needed to accept or reject each claim.
 
 ## Finalize the source of truth
 

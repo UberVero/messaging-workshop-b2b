@@ -2,7 +2,7 @@
 
 These fixtures are designed for reviewer reproduction without private context. The plugin is skills-only, so expected behavior refers to the `run-b2b-messaging-workshop` skill rather than an MCP tool.
 
-## Five positive tests
+## Ten positive tests
 
 ### 1. Start from scratch
 
@@ -54,6 +54,36 @@ These fixtures are designed for reviewer reproduction without private context. T
 
 **Fixture:** Use `fixtures/framework-needing-pressure-test.md`.
 
+### 6. Make four-phase numbering unambiguous
+
+**Prompt sequence:** Start a workshop and continue through the pressure test.
+
+**Expected behavior:** Use `Phase 0 · Company snapshot (1st of 4 phases)` through `Phase 3 · Pressure test (4th and final phase)`. Never display `Phase 3 of 4` or imply a separate Phase 4 exists.
+
+### 7. Capture quote source and privacy in one turn
+
+**Prompt:** “A customer said, ‘Changing one page broke the mobile layout.’”
+
+**Expected behavior:** Before drafting the quote, ask one combined question for its inspectable source record and whether the customer should be named, anonymized, or redacted. Accept a specific anonymized record label without demanding private identity.
+
+### 8. Allow one consolidated self-serve persona
+
+**Prompt sequence:** At Personas, the user explains that the same website owner uses, buys, approves, and pays for a low-cost self-serve product.
+
+**Expected behavior:** Produce one consolidated persona, record why roles are combined, and do not invent approvers or blockers merely to reach three rows.
+
+### 9. Turn a Proof gap into a validation plan
+
+**Prompt sequence:** At the Proof check, the user confirms there are no completed customers, pilots, benchmarks, or internal outcome records.
+
+**Expected behavior:** Return `UNRESOLVED EVIDENCE GAP`, distinguish offer mechanics from outcomes, and create a compact plan covering baseline, follow-up window, source or owner, and evidence needed for every unproven claim. Do not invent target improvements.
+
+### 10. Give proactive help without inventing facts
+
+**Prompt sequence:** Reach any content field and reply `help`.
+
+**Expected behavior:** Explain what decision the field captures, suggest two to four answer directions grounded in approved information, recommend one when useful, clearly label suggestions as possible shapes or hypotheses, and end with one easier diagnostic or a scaffold with blanks.
+
 ## Three negative tests
 
 ### 1. One-off social copy
@@ -89,7 +119,11 @@ These fixtures are designed for reviewer reproduction without private context. T
 - Guidance, question, example, and draft are visually distinct.
 - The workshop asks no more than three initial questions and one follow-up at a time.
 - A vague answer receives a focused follow-up rather than a polished invention.
-- Help mode simplifies the question without supplying company facts.
+- Help mode explains the decision, proposes two to four grounded answer shapes, recommends one when useful, and still supplies no company facts.
+- Every customer quote gets source and privacy treatment in one combined follow-up before drafting.
+- Progress labels identify Phase 3 as the fourth and final phase; no output implies a separate Phase 4.
+- A confirmed low-cost self-serve motion may use one consolidated persona instead of invented roles.
+- An unresolved Proof check produces a measurement plan without invented targets.
 - `See an example` neither advances progress nor updates the ledger.
 - Example content never appears in a pause checkpoint or final output.
 - Required skips remain open gaps; optional skips are explicitly omitted.

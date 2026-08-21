@@ -23,6 +23,8 @@ Apply one label to every substantive workshop item:
 
 Never silently upgrade a user statement, inference, hypothesis, or example into sourced evidence.
 
+For customer language, also record a privacy treatment: `named`, `anonymized`, or `redacted`. Ask for the source record and privacy treatment together when the quote first appears. An anonymized record label can establish provenance without exposing the customer's identity. If words are removed or replaced, show the redaction and do not present the edited text as an untouched verbatim quote.
+
 ## Field states
 
 Track each template field as exactly one of:
