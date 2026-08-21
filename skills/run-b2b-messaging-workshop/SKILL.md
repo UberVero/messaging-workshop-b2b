@@ -22,8 +22,8 @@ Treat the bundled template as canonical. Do not fetch or modify its master Notio
 On a new workshop:
 
 1. Explain that the workshop has four phases and ends in a pressure-tested messaging source of truth.
-2. Explain that choices are conversational replies, not guaranteed UI buttons.
-3. Begin `Phase 0 of 4 · Step 1 of 5` immediately. Show the shared Phase 0 guidance, then ask for the company or product name together with the Step 1 questions about what it sells. Do not make the name a separate unguided turn.
+2. Explain once that the workshop accepts natural answers and short text commands; do not present text commands as buttons.
+3. Begin `Phase 0 of 4 · Step 1 of 5` immediately. Show the shared Phase 0 guidance once at the start of Phase 0, then ask for the company or product name together with the Step 1 questions about what it sells. Do not make the name a separate unguided turn.
 4. Maintain the workshop ledger defined in `evidence-and-state.md` silently unless the user asks to inspect it.
 
 On resume:
@@ -37,15 +37,17 @@ If the user supplies an existing framework for a pressure test, preserve its wor
 
 ## Run every content step the same way
 
-Use this order and keep the four blocks visually distinct:
+Use this order and keep the blocks visually distinct:
 
 1. `Phase X of 4 · Step Y of Z` and the exact section title.
-2. `What to write here` with only the current section's original guidance.
-3. `Helpful prompt` with the original template prompt when one exists.
+2. `What to write here` with only the current section's original Notion guidance. Never repeat phase-level guidance on every step.
+3. `Prompt to help you answer` with the current section's original Notion prompt when one exists. If there is no formal prompt, show only the current field placeholder from the canonical template, such as `one plain line` or `price range + time to close`. Do not substitute the question-bank diagnostic unless the user asks for help.
 4. `Your question` with one to three focused questions from the question bank.
-5. `Answer naturally · See an example · Help me think · Skip · Back · Pause`
+5. End with one plain sentence: `Reply with your answer. You can also say “example,” “help,” “skip,” “back,” or “pause.”`
 
-Do not paraphrase away a useful template rule. Show short rules such as “Five lines, no more,” “Pick one,” or “Complete this last” under `What to write here` when the section has no formal callout.
+Do not render reply commands as a dot-separated, pipe-separated, bold, or button-like menu. Do not imply they are clickable.
+
+Do not paraphrase away a useful template rule. Show short rules such as “Pick one” or “Complete this last” under `What to write here` when they belong to the current section. The Phase 0 rule “Five lines, no more” is phase-level guidance: show it once when Phase 0 begins, not on every Phase 0 step.
 
 Use these counts for progress:
 
@@ -57,7 +59,7 @@ Use these counts for progress:
 ## Route reply choices
 
 - **Natural answer:** Evaluate it, then either ask one focused follow-up or draft the exact template field.
-- **See an example:** Repeat the unchanged progress indicator and current section title, then read only the current example. Start with `Fictional example — illustrative only, not your answer`. Show no other example sections. Do not update the ledger or advance. Return to the exact same question and choices.
+- **See an example / example:** Repeat the unchanged progress indicator and current section title, then read only the current example. Start with `Fictional example — illustrative only, not your answer`. Show no other example sections. Do not update the ledger or advance. Return to the exact same question and the plain-text reply instruction.
 - **Help me think:** Ask one easier diagnostic from the question bank. Do not supply facts. Offer possible answer shapes only as hypotheses.
 - **Show guidance:** Repeat the current original guidance and prompt without advancing.
 - **Skip:** Mark required content as an open gap. Remove an optional section only when the user explicitly skips it.
@@ -84,11 +86,11 @@ When the answer is usable, show:
 
 `Draft for your template`
 
-followed by only the proposed field content, then:
+followed by only the proposed field content, then one plain sentence:
 
-`Approve · Revise · Mark as hypothesis`
+`Reply “approve,” “revise,” or “hypothesis.”`
 
-Do not replace an approved answer until the revision is approved. After each phase, show a short recap of approved content, hypotheses, and open gaps, then offer `Continue · Review · Pause`.
+Do not replace an approved answer until the revision is approved. After each phase, show a short recap of approved content, hypotheses, and open gaps, then say: `Reply “continue,” “review,” or “pause.”`
 
 ## Synthesize positioning
 

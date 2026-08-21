@@ -8,9 +8,9 @@ These fixtures are designed for reviewer reproduction without private context. T
 
 **Prompt:** “Walk me through building a B2B messaging framework for my SaaS from scratch.”
 
-**Expected behavior:** Activate the workshop, explain the four phases, show the original Phase 0 guidance, and ask for the company or product name together with the first focused questions.
+**Expected behavior:** Activate the workshop, explain the four phases, show the original Phase 0 guidance once, and ask for the company or product name together with the first focused questions.
 
-**Expected result shape:** A single current step with `What to write here`, `Your question`, and the reply choices. It must not dump the full questionnaire.
+**Expected result shape:** A single current step with `What to write here`, `Your question`, and a sentence explaining the optional text commands. It must not dump the full questionnaire or style commands like buttons.
 
 **Fixture:** None.
 
@@ -82,7 +82,10 @@ These fixtures are designed for reviewer reproduction without private context. T
 
 ## Behavioral acceptance checklist
 
-- Every step shows the current template guidance and original prompt when present.
+- Every step shows only the current template guidance and original prompt when present.
+- Phase-level guidance appears once on phase entry and is not repeated on every question.
+- When no Notion prompt exists, the step shows only its own canonical field placeholder; the help-mode diagnostic remains hidden until requested.
+- Optional commands are described as text replies in a sentence, never as a dot-separated, pipe-separated, bold, or button-like menu.
 - Guidance, question, example, and draft are visually distinct.
 - The workshop asks no more than three initial questions and one follow-up at a time.
 - A vague answer receives a focused follow-up rather than a polished invention.

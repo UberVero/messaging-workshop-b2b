@@ -14,7 +14,7 @@ Use this reference when the user reaches Phase 2, asks to synthesize positioning
 - If required inputs are missing, pause synthesis and ask one focused question or route back to the named source section.
 - Keep any hypothesis visibly labeled.
 - Show the synthesized draft separately from the guidance.
-- Offer `Approve · Revise · Mark as hypothesis · Back · Pause`.
+- End with a plain-text instruction: `Reply “approve,” “revise,” “hypothesis,” “back,” or “pause.”` Do not format these commands as buttons or a button-like menu.
 - A revision does not replace an approved answer until the user approves it.
 - When showing an example, begin with the exact disclaimer below, show only the current section, and then return to the user's unanswered step:
 

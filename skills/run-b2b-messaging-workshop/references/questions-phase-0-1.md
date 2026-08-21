@@ -6,6 +6,9 @@ Canonical source: [Messaging framework template (copy for a new company)](https:
 
 - Show only the current step’s guidance, prompt, and question.
 - Render the text under **Template guidance** and **Template prompt** verbatim.
+- If a step has no **Template prompt**, use only its current canonical field placeholder from **Output shape** as the prompt. Do not show the help-mode diagnostic until the user asks for help.
+- Show phase-level guidance once when entering that phase. Do not repeat it on every step.
+- End questions with: `Reply with your answer. You can also say “example,” “help,” “skip,” “back,” or “pause.”` These are text commands, not buttons.
 - After a user answer, apply the quality bar. If it fails, ask the focused follow-up once; use the help diagnostic only when requested.
 - Never promote an example into user content. If the user asks to use it, save it as `hypothesis / model inference`.
 - Prefix every example exactly:
@@ -18,7 +21,7 @@ Canonical source: [Messaging framework template (copy for a new company)](https:
 
 ## Shared Phase 0 guidance
 
-Display this exact guidance on every Phase 0 step:
+Display this exact guidance once when Phase 0 begins. On later Phase 0 steps, show only the current field placeholder from that step's **Output shape**:
 
 > **Five lines, no more.** The sales motion line decides how the whole framework gets used:
 >

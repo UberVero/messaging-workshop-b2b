@@ -9,19 +9,19 @@ The plugin guides a founder or product marketer through the Eldur Studio framewo
 3. Positioning
 4. Pressure test
 
-At every step it shows the template's original guidance, asks focused questions, and checks the answer for specificity and evidence. `See an example` reveals one clearly fictional ExampleCo Legal answer without advancing the workshop or changing the user's work.
+At every step it shows only the relevant guidance or prompt from the Notion template, asks focused questions, and checks the answer for specificity and evidence. Saying `example` reveals one clearly fictional ExampleCo Legal answer without advancing the workshop or changing the user's work.
 
 ## What v1 includes
 
 - A free, skills-only plugin with no hosted server, account, database, or telemetry.
-- Conversational reply choices: `Answer naturally`, `See an example`, `Help me think`, `Skip`, `Back`, and `Pause`.
+- Natural answers plus optional text commands: `example`, `help`, `skip`, `back`, and `pause`.
 - Copyable checkpoints that preserve progress, approved answers, hypotheses, and gaps.
 - Evidence and provenance rules that keep invented claims out of the result.
 - Phase 2 synthesis from approved inputs and a six-part pressure test.
 - A complete Markdown copy of the original template, filled with approved answers.
 - Optional creation of a separate Notion page when Notion is connected and the user confirms the write.
 
-V1 uses text replies rather than custom interface buttons. It never changes the canonical Notion template.
+The workshop describes these as text replies and does not make them look like clickable buttons. Phase-level guidance appears once; each question uses its own Notion guidance or field prompt. The plugin never changes the canonical Notion template.
 
 ## Starter prompts
 
