@@ -1,6 +1,6 @@
-# Eldur Studio Codex Plugins
+# [Eldur Studio](https://eldur.studio) Codex Plugins
 
-This Git marketplace distributes Eldur Studio plugins for Codex.
+This Git marketplace distributes [Eldur Studio](https://eldur.studio) plugins for Codex.
 
 ## Available plugin
 
@@ -55,4 +55,14 @@ codex plugin add messaging-workshop-b2b@eldur-studio
 
 The plugin is skills-only. It has no hosted service, account, database, telemetry, or bundled customer data. It instructs Codex to ask before creating a Notion page and to preserve customer-source attribution and anonymization preferences.
 
-The canonical messaging framework and its guidance are owned by Eldur Studio LLC. Copyright Eldur Studio LLC 2026. A specific usage license is provided in the repo.
+The canonical messaging framework and its guidance are owned by [Eldur Studio LLC](https://eldur.studio). Copyright [Eldur Studio LLC](https://eldur.studio) 2026.
+
+## License
+
+You may install and use the workshop personally or inside your organization,
+including for a commercial business. You own the messaging and other original
+outputs you create with it.
+
+The workshop itself may not be resold, redistributed, white-labeled, offered as
+a paid client service, or used to create a competing product without written
+permission from [Eldur Studio](https://eldur.studio). See [LICENSE](LICENSE) for the complete terms.
