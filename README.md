@@ -1,48 +1,50 @@
-# B2B Messaging Workshop
+# Eldur Studio Codex Plugins
 
-A self-guided B2B messaging workshop that produces your Product Marketing Source of Truth.
+This Git marketplace distributes Eldur Studio plugins for Codex.
 
-The plugin guides a founder or product marketer through the Eldur Studio framework one section at a time. The canonical framework numbers these phases 0–3; the UI also labels their ordinal position so the fourth and final phase is unmistakable:
+## Available plugin
 
-1. Company snapshot
-2. Product marketing strategy
-3. Positioning
-4. Pressure test
+### B2B Messaging Workshop
 
-At every step it shows only the relevant guidance or prompt from the Notion template, asks focused questions, and checks the answer for specificity and evidence. Saying `example` reveals one clearly fictional ExampleCo Legal answer without advancing the workshop or changing the user's work.
+A guided, evidence-aware workshop that takes a founder or product marketer through company context, product-marketing strategy, positioning, and a six-part pressure test. It produces a Markdown source of truth and can optionally create a separate Notion page after the user confirms the write.
 
-When the user asks for `help`, the workshop explains the decision, offers grounded answer shapes, and recommends a useful direction without inventing company facts. It also collects quote provenance and anonymization preferences together, supports a single consolidated persona for simple self-serve purchases, and turns missing proof into a concrete validation plan.
+## Install in Codex
 
-## What v1 includes
+Add this Git repository as the `eldur-studio` marketplace:
 
-- A free, skills-only plugin with no hosted server, account, database, or telemetry.
-- Natural answers plus optional text commands: `example`, `help`, `skip`, `back`, and `pause`.
-- Copyable checkpoints that preserve progress, approved answers, hypotheses, and gaps.
-- Evidence and provenance rules that keep invented claims out of the result.
-- Phase 2 synthesis from approved inputs and a six-part pressure test.
-- A complete Markdown copy of the original template, filled with approved answers.
-- Optional creation of a separate Notion page when Notion is connected and the user confirms the write.
+```bash
+codex plugin marketplace add UberVero/messaging-workshop-b2b --ref main
+```
 
-The workshop describes these as text replies and does not make them look like clickable buttons. Phase-level guidance appears once; each question uses its own Notion guidance or field prompt. The plugin never changes the canonical Notion template.
+Then install the workshop:
 
-## Starter prompts
+```bash
+codex plugin add messaging-workshop-b2b@eldur-studio
+```
 
-- `Start my B2B messaging workshop.`
-- `Resume my messaging workshop from this checkpoint: ...`
-- `Pressure-test my existing B2B messaging framework.`
+Start a new Codex task so the plugin is loaded, then select **B2B Messaging Workshop** or enter:
 
-## Repository structure
+```text
+Start my B2B messaging workshop.
+```
 
-- `.codex-plugin/plugin.json` — plugin identity and starter prompts.
-- `skills/run-b2b-messaging-workshop/` — the guided workshop skill.
-- `skills/run-b2b-messaging-workshop/references/` — canonical template, question bank, synthesis rules, fictional examples, and evidence rules.
-- `tests/publication-evals.md` — five positive, three negative, and behavioral publication checks.
-- `tests/fixtures/` — reproducible research, checkpoint, and pressure-test fixtures.
+## Update
 
-## Validate locally
+Refresh the marketplace snapshot and reinstall the plugin:
 
-Run the OpenAI plugin and skill validators from their installed creator skills, then exercise the publication prompts in fresh conversations. The full expected behavior is documented in `tests/publication-evals.md`.
+```bash
+codex plugin marketplace upgrade eldur-studio
+codex plugin add messaging-workshop-b2b@eldur-studio
+```
 
-Public submission also requires verified publisher identity, a logo, website, support contact, privacy-policy and terms URLs, availability regions, and release notes. Those distribution details are intentionally not fabricated in this repository.
+## Repository layout
 
-The canonical template and its guidance are owned by Eldur Studio LLC. Copyright Eldur Studio LLC 2026.
+- `.agents/plugins/marketplace.json` — marketplace identity and plugin listing.
+- `plugins/messaging-workshop-b2b/` — the complete plugin package.
+- `plugins/messaging-workshop-b2b/tests/` — reproducible behavioral acceptance cases and fixtures.
+
+## Privacy and data handling
+
+The plugin is skills-only. It has no hosted service, account, database, telemetry, or bundled customer data. It instructs Codex to ask before creating a Notion page and to preserve customer-source attribution and anonymization preferences.
+
+The canonical messaging framework and its guidance are owned by Eldur Studio LLC. Copyright Eldur Studio LLC 2026.

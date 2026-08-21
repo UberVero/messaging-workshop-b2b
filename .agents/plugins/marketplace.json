@@ -1,0 +1,20 @@
+{
+  "name": "eldur-studio",
+  "interface": {
+    "displayName": "Eldur Studio"
+  },
+  "plugins": [
+    {
+      "name": "messaging-workshop-b2b",
+      "source": {
+        "source": "local",
+        "path": "./plugins/messaging-workshop-b2b"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
