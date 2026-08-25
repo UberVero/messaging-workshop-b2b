@@ -6,7 +6,15 @@ This Git marketplace distributes Eldur Studio plugins for Codex.
 
 ### B2B Messaging Workshop
 
-A guided, evidence-aware workshop that takes a founder or product marketer through company context, product-marketing strategy, positioning, and a six-part pressure test. It produces a clean Markdown source of truth without template instructions or guidance callouts and can optionally create the same clean document as a separate Notion page after the user confirms the write.
+A guided, evidence-aware workshop that takes a founder or product marketer through company context, product-marketing strategy, positioning, and a six-part pressure test. 
+It's grounded in a decade of B2B product marketing experience at companies like Verizon and Amazon, and countless client engagements where I was tasked with the #1 job of Product Marketing: write a clear, defensible positioning for a company/product that can be developed into all sort of marketing messaging: website copy, sales slides, LinkedIn profile, RFP responses, etc.
+Consistency is key. 
+
+The structure of the interview and related questions and prompts are all original, but the framework closely follows [[Apri Dunford's approach]]((https://www.aprildunford.com/)) and it has been updated to modern standards. The pressure tests uses rigorous principles, I credit [[Emily Kramer]]((https://www.mkt1.co/)) with the approach and I recommend her MCP, which inspired me to "clone myself" in this plugin.
+
+It produces a clean Markdown document as Product Marketing source of truth for your product that can be also imported to Notion.
+
+Please allow 30m to 1 h to go through the workshop (it will be worth it). If you find yourself struggling to provide answers, use it as a sign your business strategy might not be there and take time for reflecting and pivoting, then try again. Quick, superficial answers will produce poor results.
 
 ## Install in Codex
 
@@ -47,4 +55,4 @@ codex plugin add messaging-workshop-b2b@eldur-studio
 
 The plugin is skills-only. It has no hosted service, account, database, telemetry, or bundled customer data. It instructs Codex to ask before creating a Notion page and to preserve customer-source attribution and anonymization preferences.
 
-The canonical messaging framework and its guidance are owned by Eldur Studio LLC. Copyright Eldur Studio LLC 2026.
+The canonical messaging framework and its guidance are owned by Eldur Studio LLC. Copyright Eldur Studio LLC 2026. A specific usage license is provided in the repo.
