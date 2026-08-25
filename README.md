@@ -10,7 +10,7 @@ A guided, evidence-aware workshop that takes a founder or product marketer throu
 It's grounded in a decade of B2B product marketing experience at companies like Verizon and Amazon, and countless client engagements where I was tasked with the #1 job of Product Marketing: write a clear, defensible positioning for a company/product that can be developed into all sort of marketing messaging: website copy, sales slides, LinkedIn profile, RFP responses, etc.
 Consistency is key. 
 
-The structure of the interview and related questions and prompts are all original, but the framework closely follows [[Apri Dunford's approach]]((https://www.aprildunford.com/)) and it has been updated to modern standards. The pressure tests uses rigorous principles, I credit [[Emily Kramer]]((https://www.mkt1.co/)) with the approach and I recommend her MCP, which inspired me to "clone myself" in this plugin.
+The structure of the interview and related questions and prompts are all original, but the framework closely follows [April Dunford's approach](https://www.aprildunford.com/) and it has been updated to modern standards. The pressure tests uses rigorous principles, I credit [Emily Kramer](https://www.mkt1.co/) with the approach and I recommend her MCP, which inspired me to "clone myself" in this plugin.
 
 It produces a clean Markdown document as Product Marketing source of truth for your product that can be also imported to Notion.
 
