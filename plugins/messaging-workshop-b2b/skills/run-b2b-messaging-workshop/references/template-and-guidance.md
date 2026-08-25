@@ -14,7 +14,11 @@
 
 This is the bundled Markdown representation of **Messaging framework template (copy for a new company)**, canonical Notion page ID `a71d860597c24d5ea7574b933e4d6fee`, verified 2026-08-04.
 
-- Preserve the phase order, section names, guidance, prompts, field order, tables, version block, changelog, and copyright notice.
+- Use the guidance and prompts below while facilitating and validating the workshop, but do not copy them into a finished customer document.
+- In the final Markdown and Notion outputs, preserve the phase order, content section names, field order, tables, owner/version metadata, changelog, and copyright notice.
+- Strip instructional `NOTE` and `TIP` callouts, “What to write here” text, template prompts, placeholder explanations, and facilitator directions from both final formats.
+- Render owner/version metadata and the changelog as ordinary document content, not a quote block or callout.
+- Preserve approved customer quotes and substantive quoted evidence; they are content, not template instructions.
 - Replace placeholders only with approved content or clearly labeled hypotheses.
 - Keep required unknowns as `Open question: ...`.
 - Omit an optional section only when the user explicitly skips it.

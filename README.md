@@ -6,7 +6,7 @@ This Git marketplace distributes Eldur Studio plugins for Codex.
 
 ### B2B Messaging Workshop
 
-A guided, evidence-aware workshop that takes a founder or product marketer through company context, product-marketing strategy, positioning, and a six-part pressure test. It produces a Markdown source of truth and can optionally create a separate Notion page after the user confirms the write.
+A guided, evidence-aware workshop that takes a founder or product marketer through company context, product-marketing strategy, positioning, and a six-part pressure test. It produces a clean Markdown source of truth without template instructions or guidance callouts and can optionally create the same clean document as a separate Notion page after the user confirms the write.
 
 ## Install in Codex
 

@@ -130,15 +130,18 @@ When Proof remains an unresolved evidence gap because no customer or pilot evide
 ## Finalize the source of truth
 
 1. Read the complete template reference.
-2. Preserve its phase order, headings, tables, guidance callouts, owner/version block, changelog, and copyright notice.
-3. Replace placeholders only with approved or visibly labeled hypothesis content.
-4. Keep required unknowns as `Open question: ...`.
-5. Omit optional sections only when the user explicitly skipped them.
-6. Scan for `ExampleCo`, fictional numbers, invented quotes, or example-only mechanisms. Remove anything without user provenance.
-7. Ask whether the user wants `Markdown only` or `Markdown + a new Notion page`.
-8. In either case, return the complete Markdown document first.
+2. Preserve its phase order, content headings, tables, owner/version metadata, changelog, and copyright notice.
+3. Produce a clean working document, not another worksheet. Remove every instructional guidance or prompt block from the final output, including Notion-style `NOTE` and `TIP` callouts, “What to write here,” template prompts, placeholder explanations, and facilitator directions. Apply the same clean-output rule to both Markdown and Notion.
+4. Do not remove approved customer quotes or other substantive quoted evidence. Instructional quote blocks and real customer quotations are different kinds of content.
+5. Render owner, participants, version, review dates, and changelog as ordinary metadata or headings rather than a Markdown blockquote or Notion callout.
+6. Replace placeholders only with approved or visibly labeled hypothesis content.
+7. Keep required unknowns as `Open question: ...`.
+8. Omit optional sections only when the user explicitly skipped them.
+9. Scan for `ExampleCo`, fictional numbers, invented quotes, example-only mechanisms, `[!NOTE]`, `[!TIP]`, instructional blockquotes, and unfilled template prompts. Remove anything without user provenance or any guidance that belongs only to facilitation.
+10. Ask whether the user wants `Markdown only` or `Markdown + a new Notion page`.
+11. In either case, return the complete clean Markdown document first.
 
-If the user chose a new Notion page, use a connected Notion capability only after confirming the external write. Duplicate the canonical template only when safe and accessible; otherwise create a new page from the bundled template. If Notion is unavailable, explain that briefly and keep the complete paste-ready Markdown. Never update page `a71d860597c24d5ea7574b933e4d6fee` or any master template page.
+If the user chose a new Notion page, use a connected Notion capability only after confirming the external write. Create the page from the clean finalized Markdown; do not duplicate instructional callouts from the canonical template into the new page. If Notion is unavailable, explain that briefly and keep the complete paste-ready Markdown. Never update page `a71d860597c24d5ea7574b933e4d6fee` or any master template page.
 
 ## Boundaries
 

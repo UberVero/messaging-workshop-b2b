@@ -20,8 +20,8 @@ When the user asks for `help`, the workshop explains the decision, offers ground
 - Copyable checkpoints that preserve progress, approved answers, hypotheses, and gaps.
 - Evidence and provenance rules that keep invented claims out of the result.
 - Phase 2 synthesis from approved inputs and a six-part pressure test.
-- A complete Markdown copy of the original template, filled with approved answers.
-- Optional creation of a separate Notion page when Notion is connected and the user confirms the write.
+- A clean Markdown source of truth with approved answers and no template instructions or guidance callouts.
+- Optional creation of the same clean document as a separate Notion page when Notion is connected and the user confirms the write.
 
 The workshop describes these as text replies and does not make them look like clickable buttons. Phase-level guidance appears once; each question uses its own Notion guidance or field prompt. The plugin never changes the canonical Notion template.
 
@@ -36,7 +36,7 @@ The workshop describes these as text replies and does not make them look like cl
 - `.codex-plugin/plugin.json` — plugin identity and starter prompts.
 - `skills/run-b2b-messaging-workshop/` — the guided workshop skill.
 - `skills/run-b2b-messaging-workshop/references/` — canonical template, question bank, synthesis rules, fictional examples, and evidence rules.
-- `tests/publication-evals.md` — ten positive, three negative, and behavioral publication checks.
+- `tests/publication-evals.md` — eleven positive, three negative, and behavioral publication checks.
 - `tests/fixtures/` — reproducible research, checkpoint, and pressure-test fixtures.
 
 ## Validate locally

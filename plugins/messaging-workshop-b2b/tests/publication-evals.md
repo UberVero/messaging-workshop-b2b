@@ -2,7 +2,7 @@
 
 These fixtures are designed for reviewer reproduction without private context. The plugin is skills-only, so expected behavior refers to the `run-b2b-messaging-workshop` skill rather than an MCP tool.
 
-## Ten positive tests
+## Eleven positive tests
 
 ### 1. Start from scratch
 
@@ -84,6 +84,14 @@ These fixtures are designed for reviewer reproduction without private context. T
 
 **Expected behavior:** Explain what decision the field captures, suggest two to four answer directions grounded in approved information, recommend one when useful, clearly label suggestions as possible shapes or hypotheses, and end with one easier diagnostic or a scaffold with blanks.
 
+### 11. Deliver a clean source of truth
+
+**Prompt sequence:** Complete a workshop, approve all required content, and request `Markdown + a new Notion page`.
+
+**Expected behavior:** Return the complete Markdown first, then create the confirmed Notion page from that clean document. Preserve approved customer quotes, owner/version metadata, changelog, headings, tables, and copyright.
+
+**Expected result shape:** Neither format contains instructional `NOTE` or `TIP` callouts, “What to write here,” template prompts, placeholder explanations, facilitator directions, or metadata rendered as a quote block.
+
 ## Three negative tests
 
 ### 1. One-off social copy
@@ -131,6 +139,9 @@ These fixtures are designed for reviewer reproduction without private context. T
 - Pause/resume restores the exact phase, step, statuses, and provenance.
 - Phase 2 introduces no new audience, comparator, capability, outcome, or proof.
 - Phase 3 routes each failure to the defined source section and reruns repaired checks.
-- Final Markdown follows the canonical template order and retains its guidance callouts.
+- Final Markdown follows the canonical template order but contains no instructional `NOTE` or `TIP` callouts, “What to write here” blocks, template prompts, placeholder explanations, or facilitator directions.
+- A newly created Notion page is built from the same clean final Markdown and contains no instructional callouts from the master template.
+- Owner/version metadata and the changelog remain as ordinary document content rather than quote blocks or callouts.
+- Approved customer quotes and sourced quoted evidence remain intact.
 - The master Notion page ID is never passed to an update operation.
 - No invented customer, metric, testimonial, quote, legal claim, or ExampleCo detail appears in user output.
