@@ -2,7 +2,7 @@
 
 A self-guided B2B messaging workshop that produces your Product Marketing Source of Truth.
 
-The plugin guides a founder or product marketer through the Eldur Studio framework one section at a time. The canonical framework numbers these phases 0–3; the UI also labels their ordinal position so the fourth and final phase is unmistakable:
+The plugin guides a founder or product marketer through the [Eldur Studio](https://eldur.studio) framework one section at a time. The canonical framework numbers these phases 0–3; the UI also labels their ordinal position so the fourth and final phase is unmistakable:
 
 1. Company snapshot
 2. Product marketing strategy
@@ -45,4 +45,4 @@ Run the OpenAI plugin and skill validators from their installed creator skills, 
 
 Public submission also requires verified publisher identity, a logo, website, support contact, privacy-policy and terms URLs, availability regions, and release notes. Those distribution details are intentionally not fabricated in this repository.
 
-The canonical template and its guidance are owned by Eldur Studio LLC. Copyright Eldur Studio LLC 2026.
+The canonical template and its guidance are owned by [Eldur Studio LLC](https://eldur.studio). Copyright [Eldur Studio LLC](https://eldur.studio) 2026.
