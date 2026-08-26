@@ -1,6 +1,6 @@
-# [Eldur Studio](https://eldur.studio) Codex Plugins
+# [Eldur Studio](https://eldur.studio) Plugins
 
-This Git marketplace distributes [Eldur Studio](https://eldur.studio) plugins for Codex.
+This repository contains [Eldur Studio](https://eldur.studio) plugins for ChatGPT and Codex.
 
 ## Available plugin
 
@@ -18,27 +18,19 @@ Please allow 30m to 1 h to go through the workshop (it will be worth it). If you
 
 ## Install in ChatGPT desktop
 
-This workshop is distributed through the Eldur Studio Git marketplace. It is
-not yet listed in ChatGPT's universal Plugins Directory.
+No Terminal is required.
 
-1. Open Terminal and add the marketplace:
-
-   ```bash
-   codex plugin marketplace add UberVero/messaging-workshop-b2b --ref main
-   ```
-
-2. Quit and reopen the ChatGPT desktop app.
-3. Open **Plugins**, select the **Eldur Studio** marketplace, and choose
-   **B2B Messaging Workshop**.
-4. Select the plus button to install it.
-5. Start a new chat and enter:
+1. Open [B2B Messaging Workshop in the Plugins Directory](https://chatgpt.com/plugins/plugins_6a8f237c51488191a3bb6c3accefc4b5).
+2. Select **Install plugin**.
+3. Start a new chat and enter:
 
    ```text
    Start my B2B messaging workshop.
    ```
 
-You can also type `@B2B Messaging Workshop` in a new chat to select it
-explicitly. See [OpenAI's plugin installation guide](https://learn.chatgpt.com/docs/plugins)
+You can also open **Plugins** in ChatGPT, search for **B2B Messaging Workshop**,
+and select **Install plugin**. In a new chat, type `@B2B Messaging Workshop` to
+select it explicitly. See [OpenAI's plugin installation guide](https://learn.chatgpt.com/docs/plugins)
 for more information.
 
 ## Install in Codex CLI
@@ -61,9 +53,11 @@ Start a new Codex task so the plugin is loaded, then select **B2B Messaging Work
 Start my B2B messaging workshop.
 ```
 
-## Update
+## Update a Git marketplace installation
 
-Refresh the marketplace snapshot and reinstall the plugin:
+Plugins installed from ChatGPT's public directory receive the currently
+published version. If you installed the Git marketplace version in Codex,
+refresh its snapshot and reinstall the plugin:
 
 ```bash
 codex plugin marketplace upgrade eldur-studio
