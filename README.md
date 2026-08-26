@@ -16,7 +16,32 @@ It produces a clean Markdown document as Product Marketing source of truth for y
 
 Please allow 30m to 1 h to go through the workshop (it will be worth it). If you find yourself struggling to provide answers, use it as a sign your business strategy might not be there and take time for reflecting and pivoting, then try again. Quick, superficial answers will produce poor results.
 
-## Install in Codex
+## Install in ChatGPT desktop
+
+This workshop is distributed through the Eldur Studio Git marketplace. It is
+not yet listed in ChatGPT's universal Plugins Directory.
+
+1. Open Terminal and add the marketplace:
+
+   ```bash
+   codex plugin marketplace add UberVero/messaging-workshop-b2b --ref main
+   ```
+
+2. Quit and reopen the ChatGPT desktop app.
+3. Open **Plugins**, select the **Eldur Studio** marketplace, and choose
+   **B2B Messaging Workshop**.
+4. Select the plus button to install it.
+5. Start a new chat and enter:
+
+   ```text
+   Start my B2B messaging workshop.
+   ```
+
+You can also type `@B2B Messaging Workshop` in a new chat to select it
+explicitly. See [OpenAI's plugin installation guide](https://learn.chatgpt.com/docs/plugins)
+for more information.
+
+## Install in Codex CLI
 
 Add this Git repository as the `eldur-studio` marketplace:
 
