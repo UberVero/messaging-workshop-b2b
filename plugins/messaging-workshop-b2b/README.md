@@ -2,6 +2,16 @@
 
 A self-guided B2B messaging workshop that produces your Product Marketing Source of Truth.
 
+## Install in ChatGPT
+
+Open [B2B Messaging Workshop in the public Plugins Directory](https://chatgpt.com/plugins/plugins_6a8f237c51488191a3bb6c3accefc4b5), select **Install plugin**, and start a new chat with:
+
+```text
+Start my B2B messaging workshop.
+```
+
+No Terminal is required. You can also type `@B2B Messaging Workshop` in a new chat to select it explicitly.
+
 The plugin guides a founder or product marketer through the [Eldur Studio](https://eldur.studio) framework one section at a time. The canonical framework numbers these phases 0–3; the UI also labels their ordinal position so the fourth and final phase is unmistakable:
 
 1. Company snapshot
@@ -43,6 +53,6 @@ The workshop describes these as text replies and does not make them look like cl
 
 Run the OpenAI plugin and skill validators from their installed creator skills, then exercise the publication prompts in fresh conversations. The full expected behavior is documented in `tests/publication-evals.md`.
 
-Public submission also requires verified publisher identity, a logo, website, support contact, privacy-policy and terms URLs, availability regions, and release notes. Those distribution details are intentionally not fabricated in this repository.
+Version 1.0.0 is published by Eldur Studio LLC in ChatGPT's public Plugins Directory. Its listing includes the verified publisher identity, plugin icons, [website](https://eldur.studio), [support](https://eldur.studio/support/), [privacy policy](https://eldur.studio/privacy/), and [terms of use](https://eldur.studio/terms/).
 
 The canonical template and its guidance are owned by [Eldur Studio LLC](https://eldur.studio). Copyright [Eldur Studio LLC](https://eldur.studio) 2026.
